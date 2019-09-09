@@ -23,6 +23,11 @@ export default new Router({
         import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
     {
+      path: '/shader',
+      name: 'shader',
+      component: () => import('./render/ShaderExample'),
+    },
+    {
       path: '/space',
       name: 'space',
       component: () => import('./render/Space'),
